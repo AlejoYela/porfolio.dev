@@ -1,10 +1,50 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionContainer from '../components/SectionContainer.astro'
+import Experience from "../components/Experience.astro";
+import BriefCaseIcon from "../icons/BriefCaseIcon.astro";
+import CodeIcon from '../icons/CodeIcon.astro';
+import Projects from '../components/Projects.astro'
+import ProfileCheckIcon from '../icons/ProfileCheckIcon.astro';
+import AboutMe from '../components/AboutMe.astro';
 ---
 
 <Layout title="Portfolio de Alejandro Yela, Ingeniero Biomédico y de Software.">
 	<main>
-		
+		<SectionContainer class=" py-16 md:py-60">
+			<Hero/>
+			<slot/>
+		</SectionContainer>
+		<div class="space-y-24">
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BriefCaseIcon class="size-7" />
+				Experiencia laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2
+			class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white"
+			>
+				<CodeIcon class="size-7" />
+				Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer>
+
+		<SectionContainer id="sobre-mi">
+			<h2
+			  class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-white"
+			>
+			  <ProfileCheckIcon class="size-8" />
+			  Sobre mí
+			</h2>
+			<AboutMe />
+		</SectionContainer>
 	</main>
 </Layout>
 

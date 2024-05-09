@@ -1,0 +1,55 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Ingeniero Metrólogo",
+    company: "SENA",
+    description:
+      "Optimicé la validación de resultados con Python y R, agilizando los procesos de ensayo y calibración. Desarrollé documentación técnica y administrativa de alta calidad. Realicé acciones que fortalecieron la confiabilidad de nuestros equipos y ensayos, mejorando la eficiencia del laboratorio.",
+    link: "https://industriaempresayservicios.blogspot.com/p/servicios-tecnologicos.html",
+  },
+  {
+    date: "Noviembre 2022",
+    title: "Ingeniero Biomédico y de Software",
+    company: "I.P.S Cuaspud Carlosama",
+    description:
+      "Desarrollé y implementé software para la digitalización de bases de datos biomédicas, automatizando la generación de informes en C# .NET. Mejoré la eficiencia del mantenimiento hospitalario y gestioné la documentación de equipos biomédicos, capacitando al personal.",
+    link: "https://ipsindigenadecarlosama.com/"
+  },
+  {
+    date: "Agosto 2022",
+    title: "Ingeniero Metrólogo",
+    company: "Precisión Biomédica S.A.S",
+    description:
+    "Aseguré la precisión de resultados con Python y R. Calibré equipos biomédicos y de laboratorio en Nariño. Validé equipos de temperatura y certifiqué su calibración. También, capacitación de personal.",
+  },
+  {
+    date: "Enero 2022",
+    title: "Ingeniero Biomédico y de Software",
+    company: "E.S.E Cuaspud Carlosama",
+    description:
+      "Desarrollé y desplegué software para gestionar datos de equipos biomédicos en C# .NET. Supervisé inventarios y mantenimiento, mejorando la eficiencia hospitalaria. Apoyé en la gestión de residuos hospitalarios.",
+    link: "http://www.esecuaspudcarlosama-narino.gov.co/"
+  },
+  {
+    date: "Enero 2020",
+    title: "Técnico Biomédico y de Software",
+    company: "Simtecol LTDA",
+    description:
+      "Desarrollé y desplegué software en C# .NET para digitalizar y estructurar bases de datos de equipos biomédicos. Supervisé la verificación de calibración, mantenimiento y gestión de inventario y documentación de equipos biomédicos",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
+
