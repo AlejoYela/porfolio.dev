@@ -1,51 +1,80 @@
 ---
-const personalImageAlt = "Alejandro Yela"
-import Badge from "../components/Badge.astro"
-import LinkedInIcon from "../icons/LinkedInIcon.astro"
-import GithubIcon from "../icons/GithubIcon.astro"
-import MailIcon from "../icons/MailIcon.astro"
-import SocialPill from "../components/SocialPill.astro"
+const personalImageAlt = "Alejandro Yela";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../icons/LinkedInIcon.astro";
+import GithubIcon from "../icons/GithubIcon.astro";
+import MailIcon from "../icons/MailIcon.astro";
+import SocialPill from "../components/SocialPill.astro";
 ---
 
-<div class="max-w-xxl">
-  <div class="flex gap-4 mb-4">
-
-    <a
-      href="https://linkedin.com/in/midudev"
-      target="_blank"
-      rel="noopener"
-      class="flex items-center transition md:justify-center md:hover:scale-105"
-    >
-      <Badge>Disponible para trabajar</Badge>
-    </a>
+<div class="max-w-xxl flex justify-evenly">
+  <div class="max-w-xl content-center">
+    <div class="flex gap-4 mb-4">
+      <img
+        src="images/foto-aayb.png"
+        class="md:hidden rounded-full shadow-lg size-16"
+        alt=""
+      />
+      <a
+        href="https://linkedin.com/in/midudev"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+      >
+        <Badge>Disponible para trabajar</Badge>
+      </a>
+    </div>
+    <div>
+      <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+        Hola, soy Alejandro
+      </h1>
+      <p
+        class="mt-6 text-xl [&>strong]:text-blue-300 [&>strong]:font-semibold text-gray-300 text-pretty"
+      >
+        +3 años de experiencia.
+        <strong> Ingeniero Biomédico y de Software. </strong>
+        Especializado en aplicaciones clínicas, estadísticas y metrológicas.
+      </p>
+      <nav class="flex flex-wrap gap-4 mt-8">
+        <SocialPill href="mailto:andres.alejo.yela@gmail.com">
+          <MailIcon class="size-4" />
+          Contáctame
+        </SocialPill>
+        <SocialPill href="https://www.linkedin.com/in/alejandro-yela/">
+          <LinkedInIcon class="size-4" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/AlejoYela">
+          <GithubIcon class="size-4" />
+          Github
+        </SocialPill>
+      </nav>
+    </div>
   </div>
-  <h1
-    class="text-4xl font-bold tracking-tight text-white sm:text-5xl"
-  >
-    Hola, soy Alejandro
-  </h1>
-  <p
-    class="mt-6 text-xl [&>strong]:text-blue-300 [&>strong]:font-semibold text-gray-300 text-pretty"
-  >
-    +3 años de experiencia. 
-    <strong>
-      Ingeniero Biomédico y de Software.
-    </strong> 
-    Especializado en aplicaciones clínicas, estadísticas y
-    metrológicas.
-  </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:andres.alejo.yela@gmail.com">
-      <MailIcon class="size-4" />
-      Contáctame
-    </SocialPill>
-    <SocialPill href="https://www.linkedin.com/in/alejandro-yela/">
-      <LinkedInIcon class="size-4" />
-      LinkedIn
-    </SocialPill>
-    <SocialPill href="https://github.com/AlejoYela">
-      <GithubIcon class="size-4" />
-      Github
-    </SocialPill>
-  </nav>
+  <div class="hidden md:block floating">
+    <img src=`images/meditating.png` alt="" />
+  </div>
 </div>
+
+<style>
+  .floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+</style>
