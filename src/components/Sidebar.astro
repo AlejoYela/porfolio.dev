@@ -1,38 +1,40 @@
 ---
 import CodeIcon from "../icons/CodeIcon.astro";
+import DnaIcon from "../icons/DnaIcon.astro";
 import GithubIcon from "../icons/GithubIcon.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import MailIcon from "../icons/MailIcon.astro";
+import ColombiaIcon from "../icons/ColombiaIcon.astro";
 import PdfIcon from "../icons/PdfIcon.astro";
 import SocialPill from "./SocialPill.astro";
 ---
 
 <aside
     id="logo-sidebar"
-    class="hidden md:block md:fixed top-6 left-10 z-40 w-96 h-[94vh] transition-transform sm:translate-x-0"
+    class="hidden md:block md:fixed py-6 left-10 z-40 w-80 h-dvh transition-transform sm:translate-x-0"
     aria-label="Sidebar"
 >
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-800 rounded-lg bg-opacity-60 flex flex-col justify-between">
       <div>
-        <a href="https://flowbite.com/" class="flex items-center ps-2.5 mb-5">
-            <CodeIcon class="h-6 me-3 sm:h-7" alt="Flowbite Logo" />
-            <span
+        <a href="https://flowbite.com/" class="flex gap-4 items-center ps-2.5 mb-5">
+          <img src="images/foto-aayb.png" class="rounded-full size-16" alt="">
+          <span
                 class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
             >
                 Alejandro Yela.
             </span>
         </a>
 
-        <div class="size-auto px-3 mb-5">
-            <img src="/images/foto-aayb.png" class="rounded-xl" alt="">
-        </div>
-
         <div class="flex flex-col px-3">
           
-            <h2 class="text-2xl font-bold">MsC. en Ingeniería de Software y Sistemas Informáticos</h2>
-            <h2 class="text-xl font-bold text-yellow-100 mt-4">Ingeniero Biomédico</h2>
-            <h2 class=" text-blue-200 my-5">Colombia 🇨🇴</h2>
+            <h2 class="text-blue-200 text-xl font-bold inline-flex"><CodeIcon class="me-3 sm:h-7 size-16" alt="Flowbite Logo" />
+              MsC. en Ingeniería de Software y Sistemas Informáticos</h2>
+            <h2 class="text-lg font-bold text-yellow-100 mt-4 inline-flex"><DnaIcon class="me-3 sm:h-7" alt="Flowbite Logo" />
+              Ingeniero Biomédico</h2>
+            <h2 class="my-5 inline-flex"><ColombiaIcon class="me-3 sm:h-7" alt="Flowbite Logo" />
+              Colombia</h2>
         </div>
+        
       </div>
         <div class="flex flex-col">
             <nav class="flex justify-center gap-2 my-4">
