@@ -1,54 +1,144 @@
-# Astro Starter Kit: Basics
+# Portafolio Web de Alejandro Yela
 
-```sh
-npm create astro@latest -- --template basics
+Bienvenido al repositorio de mi portafolio web, creado con **Astro** y **Tailwind CSS**. Este sitio presenta mi perfil profesional, experiencia, proyectos y habilidades como ingeniero biomédico y de software especializado en aplicaciones clínicas, estadísticas y metrológicas.
+
+## 🚀 Tecnologías y Herramientas
+
+- **Astro**: Framework de desarrollo web estático, optimizado para rendimiento y SEO.
+- **Tailwind CSS**: Framework de CSS para diseño responsivo y estilizado sencillo.
+- **JavaScript**: Desarrollo dinámico y modular de la funcionalidad.
+
+## 🎨 Diseño
+
+El diseño del portafolio está inspirado en el ejemplo de portafolio de **midudev**, con personalizaciones para destacar mi experiencia en el área biomédica y de software. Está dividido en secciones clave como **Experiencia**, **Proyectos**, **Sobre mí** y **Contacto**, además de botones para descargar mi CV y acceder a LinkedIn y GitHub.
+
+## 📋 Funcionalidades Principales
+
+- **Sección de Experiencia Laboral**: Descripciones detalladas de mis cargos y logros en ingeniería biomédica y software.
+- **Portafolio de Proyectos**: Muestra una variedad de proyectos que incluyen aplicaciones para gestión de documentación biomédica, plataformas de venta en línea, y aplicaciones metrológicas.
+- **Contactos y Enlaces Sociales**: Con accesos directos a LinkedIn, GitHub y opciones de contacto.
+- **Descarga de CV**: Funcionalidad para obtener mi currículum en formato PDF.
+
+## 📂 Estructura del Proyecto
+
+```plaintext
+astro 
+├── .vscode
+├── node_modules
+├── public
+│   ├── images
+│   │   ├── 12.png
+│   │   ├── 14.png
+│   │   ├── 15.png
+│   │   ├── foto-aayb.png
+│   │   ├── meditating.png
+│   │   ├── standing.png
+│   ├── projects
+│   │   ├── api.webp
+│   │   ├── biu.webp
+│   │   ├── gdb.webp
+│   │   ├── rym.webp
+│   │   ├── sst.webp
+│   ├── CV Alejandro Yela.pdf
+│   ├── favicon.svg
+├── src
+│   ├── components
+│   │   ├── AboutMe.astro
+│   │   ├── Badge.astro
+│   │   ├── Experience.astro
+│   │   ├── Experienceltem.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── Hero.astro
+│   │   ├── LinkButton.astro
+│   │   ├── Linklnline.astro
+│   │   ├── Projects.astro
+│   │   ├── SectionContainer.astro
+│   │   ├── Sidebar.astro
+│   │   ├── SocialPill.astro
+│   ├── icons
+│   │   ├── Bootstraplcon.astro
+│   │   ├── BriefCaselcon.astro
+│   │   ├── Codelcon.astro
+│   │   ├── Colombialcon.astro
+│   │   ├── CSharpIcon.astro
+│   │   ├── Dnalcon.astro
+│   │   ├── Expresslcon.astro
+│   │   ├── Githublcon.astro
+│   │   ├── Linkedlnlcon.astro
+│   │   ├── Linklcon.astro
+│   │   ├── Maillcon.astro
+│   │   ├── Moonlcon.astro
+│   │   ├── Nodelcon.astro
+│   │   ├── Pdflcon.astro
+│   │   ├── ProfileChecklcon.astro
+│   │   ├── Reactlcon.astro
+│   │   ├── Sunlcon.astro
+│   │   ├── Systemlcon.astro
+│   ├── layouts
+│   │   ├── Layout.astro
+│   ├── pages
+│   │   ├── index.astro
+├── env.d.ts
+├── .gitignore
+├── astro.config.mjs
+├── bun.lockb
+├── package-lock.json
+├── package.json
+├── README.md
+└── tailwind.config.mjs
+└── tsconfig.json
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🖼️ Imágenes del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Aquí se muestran algunas imágenes de la interfaz del portafolio:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- ![Ejemplo de imagen 1](public/images/12.png)
+- ![Ejemplo de imagen 2](public/images/14.png)
+- ![Ejemplo de imagen 3](public/images/15.png)
+- ![Ejemplo de imagen 4](public/images/foto-aayb.png)
 
-## 🚀 Project Structure
+## 🔗 Estado en Netlify
 
-Inside of your Astro project, you'll see the following folders and files:
+El portafolio está desplegado en Netlify. Estado actual:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8cecfcb3-63a3-40c7-9550-33e032880f0e/deploy-status)](https://app.netlify.com/sites/porfolio-alejoyela/deploys)
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## ⚙️ Requisitos Previos
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Node.js** (v14+)
+- **npm** o **yarn** para gestionar paquetes.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🚀 Instrucciones para Instalar y Ejecutar
 
-## 🧞 Commands
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/tuusuario/portafolio-web.git
+   cd portafolio-web
+   ```
 
-All commands are run from the root of the project, from a terminal:
+2. **Instala las dependencias**:
+   ```bash
+   npm install
+   # o
+   yarn install
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+3. **Inicia el servidor de desarrollo**:
+   ```bash
+   npm run dev
+   # o
+   yarn dev
+   ```
 
-## 👀 Want to learn more?
+4. **Abre en el navegador**:
+   Navega a `http://localhost:3000` para ver el portafolio en funcionamiento.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - puedes consultar los términos completos en el archivo `LICENSE.md`.
+
+---
+
+¡Gracias por visitar mi portafolio! Si tienes alguna pregunta o deseas contactarme, no dudes en hacerlo a través de la sección de **Contacto** en el sitio o mediante LinkedIn.
