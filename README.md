@@ -94,10 +94,10 @@ astro
 
 Aquí se muestran algunas imágenes de la interfaz del portafolio:
 
-- ![Ejemplo de imagen 1](public/images/12.png)
-- ![Ejemplo de imagen 2](public/images/14.png)
-- ![Ejemplo de imagen 3](public/images/15.png)
-- ![Ejemplo de imagen 4](public/images/foto-aayb.png)
+- ![Ejemplo de imagen 1](public/images/s1.png)
+- ![Ejemplo de imagen 2](public/images/s2.png)
+- ![Ejemplo de imagen 3](public/images/s3.png)
+- ![Ejemplo de imagen 4](public/images/s4.png)
 
 ## 🔗 Estado en Netlify
 
