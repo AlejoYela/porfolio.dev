@@ -7,6 +7,8 @@ import GithubIcon from "../icons/GithubIcon.astro";
 import CSharpIcon from "../icons/CSharpIcon.astro";
 import ExpressIcon from "../icons/ExpressIcon.astro";
 import NodeIcon from "../icons/NodeIcon.astro";
+import AstroIcon from "../icons/AstroIcon.astro";
+import TailwindIcon from "../icons/TailwindIcon.astro"
 
 const TAGS = {
     REACT: {
@@ -35,9 +37,29 @@ const TAGS = {
         class: "bg-black text-white",
         icon: ExpressIcon,
     },
+    ASTRO:{
+      name: "Astro",
+      class: "bg-black text-white",
+      icon: AstroIcon   
+    },
+    TAILWIND:{
+      name: "Tailwind",
+      class: "bg-black text-white",
+      icon: TailwindIcon 
+    }
+
 };
 
 const PROJECTS = [
+    {
+      title: "Metropedia",
+        description:
+            "Metropedia es una plataforma web especializada en metrología, ofreciendo herramientas de cálculo avanzadas, cursos educativos y descargas para profesionales. Facilita la gestión precisa de mediciones y calibraciones con una interfaz intuitiva y funcionalidades integradas.",
+        link: "https://svgl.vercel.app/",
+        github: "https://github.com/AlejoYela/metropedia",
+        image: "/projects/metropedia.webp",
+        tags: [TAGS.ASTRO, TAGS.TAILWIND],
+    },
     {
         title: "Biu Cosmetics",
         description:
