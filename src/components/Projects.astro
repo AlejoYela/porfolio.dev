@@ -9,6 +9,7 @@ import ExpressIcon from "../icons/ExpressIcon.astro";
 import NodeIcon from "../icons/NodeIcon.astro";
 import AstroIcon from "../icons/AstroIcon.astro";
 import TailwindIcon from "../icons/TailwindIcon.astro"
+import NextIcon from "../icons/NextIcon.astro";
 
 const TAGS = {
     REACT: {
@@ -46,11 +47,25 @@ const TAGS = {
       name: "Tailwind",
       class: "bg-black text-white",
       icon: TailwindIcon 
+    },
+    NEXT:{
+      name: "Next.js",
+      class: "bg-black text-white",
+      icon: NextIcon
     }
 
 };
 
 const PROJECTS = [
+    {
+      title: "Simtecol LTDA",
+        description:
+            "Página web de la empresa de venta y distribución de equipos e insumos biomédicos Simtecol LTDA. Con información de productos, servicios, contacto y blog. Tienda virtual en desarrollo. Diseño moderno y funcionalidades avanzadas.",
+        link: "https://simtecol-web.vercel.app/",
+        github: "https://github.com/AlejoYela/simtecol-web.git",
+        image: "/projects/simtecol.webp",
+        tags: [TAGS.NEXT, TAGS.TAILWIND],
+    },
     {
       title: "Corpolinar",
         description:
